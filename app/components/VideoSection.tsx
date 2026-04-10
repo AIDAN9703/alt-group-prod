@@ -43,7 +43,7 @@ export default function VideoSection() {
         {/* Video */}
         <video
           ref={videoRef}
-          src="/silver-liquid.mp4"
+          src="https://raw.githubusercontent.com/AIDAN9703/alt-group-prod/main/public/silver-liquid.mp4"
           className="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-screen"
           preload="auto"
           muted

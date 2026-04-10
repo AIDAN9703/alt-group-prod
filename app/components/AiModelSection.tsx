@@ -66,7 +66,7 @@ export default function AiModelSection() {
         >
           <video
             ref={videoRef}
-            src="/ai-zoom-through-chip.mp4"
+            src="https://raw.githubusercontent.com/AIDAN9703/alt-group-prod/main/public/ai-zoom-through-chip.mp4"
             muted
             playsInline
             preload="auto"

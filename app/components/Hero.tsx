@@ -48,7 +48,7 @@ export default function Hero() {
       {/* Abstract Tech Data Stream Background -> Replaced with Video */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none bg-black">
         <video 
-          src="/server-farm.mp4"
+          src="https://raw.githubusercontent.com/AIDAN9703/alt-group-prod/main/public/server-farm.mp4"
           autoPlay
           loop
           muted
