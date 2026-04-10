@@ -15,6 +15,8 @@ export default function AiModelSection() {
     const video = videoRef.current;
     if (!outer || !videoWrapper || !textContent || !video) return;
 
+    video.pause(); // prevent autoplay fighting the manual scrubbing
+
     const onScroll = () => {
       const rect = outer.getBoundingClientRect();
       const scrolled = -rect.top;
@@ -66,7 +68,8 @@ export default function AiModelSection() {
         >
           <video
             ref={videoRef}
-            src="https://raw.githubusercontent.com/AIDAN9703/alt-group-prod/main/public/ai-zoom-through-chip.mp4"
+            src="/ai-zoom-through-chip.mp4"
+            autoPlay
             muted
             playsInline
             preload="auto"

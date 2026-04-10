@@ -19,6 +19,8 @@ export default function VideoSection() {
     const video = videoRef.current;
     if (!outer || !video) return;
 
+    video.pause(); // ensure we prevent playing forward so scroll scrubbing works cleanly
+
     // Use a plain scroll event to drive currentTime — no GSAP pin needed.
     // The outer div is 600vh tall which gives plenty of scroll room.
     const onScroll = () => {
@@ -43,9 +45,10 @@ export default function VideoSection() {
         {/* Video */}
         <video
           ref={videoRef}
-          src="https://raw.githubusercontent.com/AIDAN9703/alt-group-prod/main/public/silver-liquid.mp4"
+          src="/silver-liquid.mp4"
           className="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-screen"
           preload="auto"
+          autoPlay
           muted
           playsInline
         />
